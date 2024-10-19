@@ -30,12 +30,9 @@ public class PanelDeCategorias extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         btn_CategoriaProductos = new javax.swing.JButton();
         btn_CaracteristicasProductos = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
         btn_Productos = new javax.swing.JButton();
+        btn_Salir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -43,8 +40,7 @@ public class PanelDeCategorias extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(102, 0, 51));
         jLabel1.setText("Gestion de Productos");
 
-        btn_CategoriaProductos.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
-        btn_CategoriaProductos.setForeground(new java.awt.Color(102, 0, 51));
+        btn_CategoriaProductos.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         btn_CategoriaProductos.setText("Categoria de Productos");
         btn_CategoriaProductos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -52,7 +48,7 @@ public class PanelDeCategorias extends javax.swing.JFrame {
             }
         });
 
-        btn_CaracteristicasProductos.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        btn_CaracteristicasProductos.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         btn_CaracteristicasProductos.setForeground(new java.awt.Color(102, 0, 51));
         btn_CaracteristicasProductos.setText("Características de Productos");
         btn_CaracteristicasProductos.addActionListener(new java.awt.event.ActionListener() {
@@ -61,35 +57,24 @@ public class PanelDeCategorias extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("Especificaciones de Productos");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        jButton2.setText("Alta de Productos");
+        jButton2.setText("Especificaciones de Productos");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
-        jButton3.setText("Baja de Productos");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-
-        jButton4.setText("Modificacion de Productos");
-
-        jButton5.setText("Consideraciones Adicionales");
-
         btn_Productos.setText("Agregar Producto");
         btn_Productos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_ProductosActionPerformed(evt);
+            }
+        });
+
+        btn_Salir.setText("Salir-->");
+        btn_Salir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_SalirActionPerformed(evt);
             }
         });
 
@@ -103,50 +88,35 @@ public class PanelDeCategorias extends javax.swing.JFrame {
                         .addGap(70, 70, 70)
                         .addComponent(jLabel1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(212, 212, 212)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButton3)
-                            .addComponent(jButton2)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(184, 184, 184)
+                        .addGap(159, 159, 159)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jButton4)
-                                .addComponent(jButton5))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(171, 171, 171)
-                        .addComponent(btn_CategoriaProductos))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(150, 150, 150)
-                        .addComponent(btn_CaracteristicasProductos))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(182, 182, 182)
-                        .addComponent(btn_Productos, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(btn_Productos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btn_CategoriaProductos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btn_CaracteristicasProductos, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(94, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(btn_Salir)
+                .addGap(78, 78, 78))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(38, 38, 38)
                 .addComponent(jLabel1)
-                .addGap(3, 3, 3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btn_Productos)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(btn_CategoriaProductos)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(btn_CaracteristicasProductos)
                 .addGap(18, 18, 18)
                 .addComponent(jButton2)
-                .addGap(21, 21, 21)
-                .addComponent(jButton3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton5)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                .addComponent(btn_Salir, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -157,37 +127,39 @@ public class PanelDeCategorias extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(9, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_CategoriaProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_CategoriaProductosActionPerformed
-        // TODO add your handling code here:
+      CategoriaProductos cateProductos = new CategoriaProductos();
+      cateProductos.setVisible(true);
         
     }//GEN-LAST:event_btn_CategoriaProductosActionPerformed
 
     private void btn_CaracteristicasProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_CaracteristicasProductosActionPerformed
-        // TODO add your handling code here:
+       CaracProductos caracteProductos = new CaracProductos();
+       caracteProductos.setVisible(true);
     }//GEN-LAST:event_btn_CaracteristicasProductosActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        EspProductos esProductos = new EspProductos();
+        esProductos.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btn_ProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ProductosActionPerformed
         Productos productos = new Productos();
         productos.setVisible(true);
     }//GEN-LAST:event_btn_ProductosActionPerformed
+
+    private void btn_SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_SalirActionPerformed
+     Login salir = new Login();
+     salir.setVisible(true);
+    }//GEN-LAST:event_btn_SalirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -228,11 +200,8 @@ public class PanelDeCategorias extends javax.swing.JFrame {
     private javax.swing.JButton btn_CaracteristicasProductos;
     private javax.swing.JButton btn_CategoriaProductos;
     private javax.swing.JButton btn_Productos;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btn_Salir;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables

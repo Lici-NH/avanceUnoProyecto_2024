@@ -1,0 +1,2 @@
+0003/color/color del producto
+0003/tamaño/Hace referencia al tamaño de un producto

@@ -1,2 +1,3 @@
 00023/Plancha/Electrodomesticos/56/2/Plancha para ropa, color roja.
 00063/Computadora/Electronica/9000/1/Computadora con procesador intel core 7 de 11va generacion
+/////

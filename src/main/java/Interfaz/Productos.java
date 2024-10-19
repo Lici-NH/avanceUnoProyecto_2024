@@ -45,7 +45,7 @@ public class Productos extends javax.swing.JFrame {
         DescripcionProducto = new javax.swing.JTextArea();
         CategoriaProducto = new javax.swing.JTextField();
         btn_GurdarProducto = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btn_Regresar = new javax.swing.JButton();
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
         jLabel1.setText("Productos");
@@ -196,11 +196,11 @@ public class Productos extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
-        jButton2.setText("Ver Producto");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btn_Regresar.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        btn_Regresar.setText("Regresar --");
+        btn_Regresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btn_RegresarActionPerformed(evt);
             }
         });
 
@@ -212,7 +212,7 @@ public class Productos extends javax.swing.JFrame {
                 .addGap(42, 42, 42)
                 .addComponent(btn_GurdarProducto)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton2)
+                .addComponent(btn_Regresar)
                 .addGap(56, 56, 56))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -233,7 +233,7 @@ public class Productos extends javax.swing.JFrame {
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
+                    .addComponent(btn_Regresar)
                     .addComponent(btn_GurdarProducto))
                 .addContainerGap(17, Short.MAX_VALUE))
         );
@@ -256,9 +256,11 @@ public class Productos extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btn_GurdarProductoActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void btn_RegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_RegresarActionPerformed
+       PanelDeCategorias pCategorias = new PanelDeCategorias();
+       pCategorias.setVisible(true);
+       
+    }//GEN-LAST:event_btn_RegresarActionPerformed
 
     private void CategoriaProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CategoriaProductoActionPerformed
         // TODO add your handling code here:
@@ -307,7 +309,7 @@ public class Productos extends javax.swing.JFrame {
     private javax.swing.JTextField NombreProducto;
     private javax.swing.JTextField PrecioProducto;
     private javax.swing.JButton btn_GurdarProducto;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btn_Regresar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
